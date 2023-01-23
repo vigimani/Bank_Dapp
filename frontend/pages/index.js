@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { Header } from '@/components/Header'
-import Contract from '../../backend/artifacts/contracts/Bank.sol/Bank'
+import Contract from '../../artifacts/contracts/Bank.sol/Bank'
 import { useAccount, useProvider, useSigner, useContractRead } from 'wagmi'
 import { List, Heading, Spinner, Center, Flex, Box, Text, Input, Button, useToast } from '@chakra-ui/react';
 import { useState, useEffect } from 'react';

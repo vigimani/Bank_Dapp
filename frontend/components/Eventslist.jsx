@@ -10,10 +10,8 @@ import {
 } from "@chakra-ui/react";
 import { useAccount, useProvider, useBalance } from "wagmi";
 import { useState, useEffect } from "react";
-import Contract from "../../backend/artifacts/contracts/Bank.sol/Bank";
+import Contract from "../../artifacts/contracts/Bank.sol/Bank";
 import { ethers } from "ethers";
-import Events from "./Events";
-import { randomBytes } from "ethers/lib/utils.js";
 
 export default function Eventslist() {
   const contractAddress = "0xf389A9478da87Dd46C5ED9AD4D481b9A45Bc488a";
@@ -36,19 +34,27 @@ export default function Eventslist() {
 
   useEffect(() => {
     const contract = new ethers.Contract(contractAddress, Contract.abi, provider)
-    contract.on("etherDeposited", (account, amount) => {
+    eventListener(contract)
+    return () => {
+        contract.removeAllListeners();
+    };
+}, [])
+
+const eventListener = async(contract) => {
+    const startBlockNumber = await provider.getBlockNumber();
+    contract.on('etherDeposited', (...args) => {
+        const event = args[args.length - 1];
+        console.log(event)
+        if(event.blockNumber <= startBlockNumber) return; // do not react to this event
         toast({
             title: 'Deposit Event',
-            description: "Account : " + account + " - amount " + amount,
+            description: "By : " + event.args.account + ", Amount : " + ethers.utils.formatEther(event.args.amount) + " Eth",
             status: 'success',
             duration: 5000,
             isClosable: true,
         })
     })
-    return () => {
-        contract.removeAllListeners();
-        };
-    }, [])
+}
 
     // provider.send('eth_getBlockByHash', [ blockHash, true ]).then((block) => {
     //     console.log(block);

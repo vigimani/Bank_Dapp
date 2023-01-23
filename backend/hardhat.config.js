@@ -7,7 +7,7 @@ require("solidity-coverage")
 require("hardhat-docgen")
 
 const PK = process.env.PK || "";
-const ALCHEMY = process.env.ALCHEMY || "";
+const ALCHEMY = process.env.ALCHEMY_GOERLI || "";
 const ETHERSCAN = process.env.ETHERSCAN || "";
 
 module.exports = {

@@ -2,13 +2,14 @@ import "@/styles/globals.css";
 import "@rainbow-me/rainbowkit/styles.css";
 import { getDefaultWallets, RainbowKitProvider } from "@rainbow-me/rainbowkit";
 import { configureChains, createClient, WagmiConfig } from "wagmi";
-import { hardhat } from "wagmi/chains";
+import { hardhat, goerli } from "wagmi/chains";
 import { alchemyProvider } from "wagmi/providers/alchemy";
 import { publicProvider } from "wagmi/providers/public";
 import { ChakraProvider } from "@chakra-ui/react";
 
 const { chains, provider } = configureChains(
-  [hardhat],
+  [goerli],
+  // [hardhat],
   [
     //alchemyProvider({ apiKey: process.env.ALCHEMY_ID }),
     publicProvider(),

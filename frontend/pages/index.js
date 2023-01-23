@@ -11,7 +11,7 @@ import Eventslist from '@/components/Eventslist';
 
 export default function Home() {
 
-  const contractAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3"
+  const contractAddress = "0xf389A9478da87Dd46C5ED9AD4D481b9A45Bc488a"
   const { address, isConnected } = useAccount()
   const provider = useProvider()
   const { data: signer } = useSigner()

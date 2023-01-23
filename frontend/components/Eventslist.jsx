@@ -16,15 +16,15 @@ import Events from "./Events";
 import { randomBytes } from "ethers/lib/utils.js";
 
 export default function Eventslist() {
-  const contractAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
+  const contractAddress = "0xf389A9478da87Dd46C5ED9AD4D481b9A45Bc488a";
   //WAGMI
   const { address, isConnected } = useAccount();
   const provider = useProvider();
   const [transactions, setTransactions] = useState([]);
-  const { data } = useBalance({
-        address: address,
-        watch: true,
-  })
+//   const { data } = useBalance({
+//         address: address,
+//         watch: true,
+//   })
 
   //CHAKRA-UI
   const toast = useToast()
@@ -50,6 +50,10 @@ export default function Eventslist() {
         };
     }, [])
 
+    // provider.send('eth_getBlockByHash', [ blockHash, true ]).then((block) => {
+    //     console.log(block);
+    // });
+
   const updatetransactions = async () => {
     const contract = await new ethers.Contract(
       contractAddress,
@@ -58,9 +62,8 @@ export default function Eventslist() {
     );
     const filter = {
       address: contractAddress,
-      fromBlock: 0,
     };
-    let events = await contract.queryFilter(filter);
+    let events = await contract.queryFilter(filter, 8361848);
     console.log(events)
     let allTheEvents = [];
     for await (const event of events) {

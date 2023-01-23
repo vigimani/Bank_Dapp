@@ -1,0 +1,230 @@
+{
+  "address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "when",
+          "type": "uint256"
+        }
+      ],
+      "name": "etherDeposited",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "when",
+          "type": "uint256"
+        }
+      ],
+      "name": "etherWithdrawed",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "deposit",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getBalanceAndLastDeposit",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "balance",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "lastDeposit",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct Bank.Account",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getBalanceOfUser",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "withdraw",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0xb81c8bfc742e620f7972a9421f8c8fc7eb92c0d8df56e43e52b62f5572449295",
+  "receipt": {
+    "to": null,
+    "from": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+    "contractAddress": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+    "transactionIndex": 0,
+    "gasUsed": "501399",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x0a298d1b25e48de801f0a3fc1d5eb43ec7519b0e10f032fc39fce95880a5fd3a",
+    "transactionHash": "0xb81c8bfc742e620f7972a9421f8c8fc7eb92c0d8df56e43e52b62f5572449295",
+    "logs": [],
+    "blockNumber": 1,
+    "cumulativeGasUsed": "501399",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 1,
+  "solcInputHash": "5e4433787560dcd19b11f717a548bd8a",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"when\",\"type\":\"uint256\"}],\"name\":\"etherDeposited\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"when\",\"type\":\"uint256\"}],\"name\":\"etherWithdrawed\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"deposit\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getBalanceAndLastDeposit\",\"outputs\":[{\"components\":[{\"internalType\":\"uint256\",\"name\":\"balance\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"lastDeposit\",\"type\":\"uint256\"}],\"internalType\":\"struct Bank.Account\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getBalanceOfUser\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_amount\",\"type\":\"uint256\"}],\"name\":\"withdraw\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Victor \",\"kind\":\"dev\",\"methods\":{\"getBalanceAndLastDeposit()\":{\"returns\":{\"_0\":\"The account (balance + last deposit) of the user\"}},\"getBalanceOfUser()\":{\"returns\":{\"_0\":\"The amount of ethers the user has on the smart contract\"}},\"withdraw(uint256)\":{\"params\":{\"_amount\":\"The amount of ethers the user wants to withdraw\"}}},\"title\":\"A simple Bank contract which allows users to deposit and then, withdraw ethers\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"deposit()\":{\"notice\":\"Allows a user to deposit ethers on the smart contract\"},\"getBalanceAndLastDeposit()\":{\"notice\":\"get the balance and the last deposit of the user\"},\"getBalanceOfUser()\":{\"notice\":\"Allows to get the amount of ethers the user has on the smart contract \"},\"withdraw(uint256)\":{\"notice\":\"Allows the user to withdraw ethers from the smart contract \"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/Bank.sol\":\"Bank\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/Bank.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.8.17;\\n\\n///@title A simple Bank contract which allows users to deposit and then, withdraw ethers\\n///@author Victor \\n\\ncontract Bank {\\n\\n    struct Account {\\n        uint balance;\\n        uint lastDeposit;\\n    }\\n\\n    mapping(address => Account) accounts;\\n\\n    event etherDeposited(address indexed account, uint amount, uint256 when);\\n    event etherWithdrawed(address indexed account, uint amount, uint256 when);\\n\\n    ///@notice get the balance and the last deposit of the user\\n    ///@return The account (balance + last deposit) of the user\\n    function getBalanceAndLastDeposit() external view returns(Account memory) {\\n        return accounts[msg.sender];\\n    }\\n\\n    ///@notice Allows the user to withdraw ethers from the smart contract \\n    ///@param _amount The amount of ethers the user wants to withdraw\\n    function withdraw(uint _amount) external {\\n        require(accounts[msg.sender].balance >= _amount, \\\"Not enough funds\\\");\\n        accounts[msg.sender].balance -= _amount;\\n        (bool received, ) = msg.sender.call{value: _amount}(\\\"\\\");\\n        require(received, \\\"An error occured\\\");\\n        emit etherWithdrawed(msg.sender, _amount, block.timestamp);\\n    }\\n\\n    ///@notice Allows a user to deposit ethers on the smart contract\\n    function deposit() external payable {\\n        require(msg.value > 0, \\\"Not enough funds deposited\\\");\\n        accounts[msg.sender].balance += msg.value;\\n        accounts[msg.sender].lastDeposit = block.timestamp;\\n        emit etherDeposited(msg.sender, msg.value, block.timestamp);\\n    }\\n\\n    ///@notice Allows to get the amount of ethers the user has on the smart contract \\n    ///@return The amount of ethers the user has on the smart contract\\n    function getBalanceOfUser() external view returns(uint) {\\n        return accounts[msg.sender].balance;\\n    }\\n\\n}\",\"keccak256\":\"0x0301f0ab0ac707bcad455d0244815cd9f59aa18a40a0b039c5c253a6cbb634f0\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50610825806100206000396000f3fe60806040526004361061003f5760003560e01c80632e1a7d4d1461004457806358d9600c1461006d57806379982de414610098578063d0e30db0146100c3575b600080fd5b34801561005057600080fd5b5061006b600480360381019061006691906104e4565b6100cd565b005b34801561007957600080fd5b506100826102a9565b60405161008f919061054f565b60405180910390f35b3480156100a457600080fd5b506100ad610313565b6040516100ba9190610579565b60405180910390f35b6100cb61035c565b005b806000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600001541015610151576040517f08c379a0000000000000000000000000000000000000000000000000000000008152600401610148906105f1565b60405180910390fd5b806000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000160008282546101a29190610640565b9250508190555060003373ffffffffffffffffffffffffffffffffffffffff16826040516101cf906106a5565b60006040518083038185875af1925050503d806000811461020c576040519150601f19603f3d011682016040523d82523d6000602084013e610211565b606091505b5050905080610255576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040161024c90610706565b60405180910390fd5b3373ffffffffffffffffffffffffffffffffffffffff167f0a562f985098f829ffae822e2edae7b29f206101370221542ac94bbd439b8090834260405161029d929190610726565b60405180910390a25050565b6102b161048f565b6000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060405180604001604052908160008201548152602001600182015481525050905090565b60008060003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000154905090565b6000341161039f576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004016103969061079b565b60405180910390fd5b346000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000160008282546103f091906107bb565b92505081905550426000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600101819055503373ffffffffffffffffffffffffffffffffffffffff167fa335444268e45651ff62b4e931fae488c12f456d00b72940d3ee040d460b4e883442604051610485929190610726565b60405180910390a2565b604051806040016040528060008152602001600081525090565b600080fd5b6000819050919050565b6104c1816104ae565b81146104cc57600080fd5b50565b6000813590506104de816104b8565b92915050565b6000602082840312156104fa576104f96104a9565b5b6000610508848285016104cf565b91505092915050565b61051a816104ae565b82525050565b6040820160008201516105366000850182610511565b5060208201516105496020850182610511565b50505050565b60006040820190506105646000830184610520565b92915050565b610573816104ae565b82525050565b600060208201905061058e600083018461056a565b92915050565b600082825260208201905092915050565b7f4e6f7420656e6f7567682066756e647300000000000000000000000000000000600082015250565b60006105db601083610594565b91506105e6826105a5565b602082019050919050565b6000602082019050818103600083015261060a816105ce565b9050919050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052601160045260246000fd5b600061064b826104ae565b9150610656836104ae565b925082820390508181111561066e5761066d610611565b5b92915050565b600081905092915050565b50565b600061068f600083610674565b915061069a8261067f565b600082019050919050565b60006106b082610682565b9150819050919050565b7f416e206572726f72206f63637572656400000000000000000000000000000000600082015250565b60006106f0601083610594565b91506106fb826106ba565b602082019050919050565b6000602082019050818103600083015261071f816106e3565b9050919050565b600060408201905061073b600083018561056a565b610748602083018461056a565b9392505050565b7f4e6f7420656e6f7567682066756e6473206465706f7369746564000000000000600082015250565b6000610785601a83610594565b91506107908261074f565b602082019050919050565b600060208201905081810360008301526107b481610778565b9050919050565b60006107c6826104ae565b91506107d1836104ae565b92508282019050808211156107e9576107e8610611565b5b9291505056fea26469706673582212206cd8b49ba0dd5a205d05a56e013b431dceeb2a5d38baa63780cf71c65c2e25a764736f6c63430008110033",
+  "deployedBytecode": "0x60806040526004361061003f5760003560e01c80632e1a7d4d1461004457806358d9600c1461006d57806379982de414610098578063d0e30db0146100c3575b600080fd5b34801561005057600080fd5b5061006b600480360381019061006691906104e4565b6100cd565b005b34801561007957600080fd5b506100826102a9565b60405161008f919061054f565b60405180910390f35b3480156100a457600080fd5b506100ad610313565b6040516100ba9190610579565b60405180910390f35b6100cb61035c565b005b806000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600001541015610151576040517f08c379a0000000000000000000000000000000000000000000000000000000008152600401610148906105f1565b60405180910390fd5b806000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000160008282546101a29190610640565b9250508190555060003373ffffffffffffffffffffffffffffffffffffffff16826040516101cf906106a5565b60006040518083038185875af1925050503d806000811461020c576040519150601f19603f3d011682016040523d82523d6000602084013e610211565b606091505b5050905080610255576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040161024c90610706565b60405180910390fd5b3373ffffffffffffffffffffffffffffffffffffffff167f0a562f985098f829ffae822e2edae7b29f206101370221542ac94bbd439b8090834260405161029d929190610726565b60405180910390a25050565b6102b161048f565b6000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060405180604001604052908160008201548152602001600182015481525050905090565b60008060003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000154905090565b6000341161039f576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004016103969061079b565b60405180910390fd5b346000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000160008282546103f091906107bb565b92505081905550426000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600101819055503373ffffffffffffffffffffffffffffffffffffffff167fa335444268e45651ff62b4e931fae488c12f456d00b72940d3ee040d460b4e883442604051610485929190610726565b60405180910390a2565b604051806040016040528060008152602001600081525090565b600080fd5b6000819050919050565b6104c1816104ae565b81146104cc57600080fd5b50565b6000813590506104de816104b8565b92915050565b6000602082840312156104fa576104f96104a9565b5b6000610508848285016104cf565b91505092915050565b61051a816104ae565b82525050565b6040820160008201516105366000850182610511565b5060208201516105496020850182610511565b50505050565b60006040820190506105646000830184610520565b92915050565b610573816104ae565b82525050565b600060208201905061058e600083018461056a565b92915050565b600082825260208201905092915050565b7f4e6f7420656e6f7567682066756e647300000000000000000000000000000000600082015250565b60006105db601083610594565b91506105e6826105a5565b602082019050919050565b6000602082019050818103600083015261060a816105ce565b9050919050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052601160045260246000fd5b600061064b826104ae565b9150610656836104ae565b925082820390508181111561066e5761066d610611565b5b92915050565b600081905092915050565b50565b600061068f600083610674565b915061069a8261067f565b600082019050919050565b60006106b082610682565b9150819050919050565b7f416e206572726f72206f63637572656400000000000000000000000000000000600082015250565b60006106f0601083610594565b91506106fb826106ba565b602082019050919050565b6000602082019050818103600083015261071f816106e3565b9050919050565b600060408201905061073b600083018561056a565b610748602083018461056a565b9392505050565b7f4e6f7420656e6f7567682066756e6473206465706f7369746564000000000000600082015250565b6000610785601a83610594565b91506107908261074f565b602082019050919050565b600060208201905081810360008301526107b481610778565b9050919050565b60006107c6826104ae565b91506107d1836104ae565b92508282019050808211156107e9576107e8610611565b5b9291505056fea26469706673582212206cd8b49ba0dd5a205d05a56e013b431dceeb2a5d38baa63780cf71c65c2e25a764736f6c63430008110033",
+  "devdoc": {
+    "author": "Victor ",
+    "kind": "dev",
+    "methods": {
+      "getBalanceAndLastDeposit()": {
+        "returns": {
+          "_0": "The account (balance + last deposit) of the user"
+        }
+      },
+      "getBalanceOfUser()": {
+        "returns": {
+          "_0": "The amount of ethers the user has on the smart contract"
+        }
+      },
+      "withdraw(uint256)": {
+        "params": {
+          "_amount": "The amount of ethers the user wants to withdraw"
+        }
+      }
+    },
+    "title": "A simple Bank contract which allows users to deposit and then, withdraw ethers",
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "deposit()": {
+        "notice": "Allows a user to deposit ethers on the smart contract"
+      },
+      "getBalanceAndLastDeposit()": {
+        "notice": "get the balance and the last deposit of the user"
+      },
+      "getBalanceOfUser()": {
+        "notice": "Allows to get the amount of ethers the user has on the smart contract "
+      },
+      "withdraw(uint256)": {
+        "notice": "Allows the user to withdraw ethers from the smart contract "
+      }
+    },
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 12,
+        "contract": "contracts/Bank.sol:Bank",
+        "label": "accounts",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_mapping(t_address,t_struct(Account)7_storage)"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_mapping(t_address,t_struct(Account)7_storage)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => struct Bank.Account)",
+        "numberOfBytes": "32",
+        "value": "t_struct(Account)7_storage"
+      },
+      "t_struct(Account)7_storage": {
+        "encoding": "inplace",
+        "label": "struct Bank.Account",
+        "members": [
+          {
+            "astId": 4,
+            "contract": "contracts/Bank.sol:Bank",
+            "label": "balance",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 6,
+            "contract": "contracts/Bank.sol:Bank",
+            "label": "lastDeposit",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256"
+          }
+        ],
+        "numberOfBytes": "64"
+      },
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 # Bank-DApp-with-Hardhat-hardhat-deploy-NextJS-RainbowKit-and-Wagmi
 
-![alt text](https://github.com/vigimani/Bank_Dapp/blob/main/imageDApp.png)
+![alt text](https://github.com/vigimani/Bank_Dapp/blob/main/imageDAPP.png)
 
 ## Hardhat
 
